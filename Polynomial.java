@@ -160,6 +160,10 @@ class Polynomial {
 			}
 		}
 
+		if (count == 0) {
+			return new Polynomial(new double[] {0}, new int[] {0});
+		}
+		
 		double[] ret_coefficients = new double[count];
 		int[] ret_exponents= new int[count];
 
